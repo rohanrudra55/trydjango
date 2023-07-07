@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form  action = "." method='POST'>{% csrf_token %}
+    <p> Do you want to delete the product {{ object.id }} {{ object.name }} ?</p>
+    <p>
+        <input  type='submit' value='Yes'/> 
+        <button onclick='http://127.0.0.1:8000/product/'/>No</button>
+    </p>
+</form>
+{% endblock %}

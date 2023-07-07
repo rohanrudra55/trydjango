@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- 
+There are two two types of forms to get data 
+from user one is using post and another is using get
+it saves the data in a dict. POST uses a security crf
+to check for the data.
+-->
+
+<form action='.' method='POST'> {% csrf_token %}
+    {{ form.as_p }}
+    <input type='submit' , value='Add'></input>
+</form>
+
+{% endblock %}
