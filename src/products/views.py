@@ -50,6 +50,7 @@ def dynamic_detail_view(request,product_id):
     return render(request, 'product/product_detail.html',context) 
 
 
+
 # INITIAL Practice
 def home_view(request):
     # Here it gets a request as soon as
